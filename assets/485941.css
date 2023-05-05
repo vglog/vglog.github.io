@@ -1,0 +1,310 @@
+/* Kundenindividueller Stylesheet */
+/* Hinweis: Falls Ihre Einstellung nicht it übernommen wird, leeren Sie bitte den Cache Ihres Browsers. */
+/* URL Links immer per https:// wenn extern */
+
+/* allg. Farbeinstellung */
+body {
+	background-color: #FFFFFF;
+	color: rgb(51, 51, 51);
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	font-size: 15px;
+	line-height: 150%;
+}
+
+.sectionBreak {
+	border: none;
+}
+
+
+.captcha {
+	background-color: transparent;
+	border:dotted;
+	border-color:rgb(255, 120, 0);
+}
+
+.alert-warning {
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 120, 0);
+	border-bottom-right-radius: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 40px;
+}
+
+/* Schriftarten */
+.font_normal {
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+}
+
+.font_bold {
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	font-weight: bold;
+}
+
+.font_black { 
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	font-weight: 900;
+}
+
+/* Header und Überschrift */
+header h1, .header h1 {
+	box-sizing: border-box;
+	color: rgb(97, 97, 97);
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 46px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -22px;
+	text-align: center;
+       display: none;
+}
+
+/* gro�e �berschriften */
+.headline-big {
+	box-sizing: border-box;
+	color:	rgb(51, 51, 51);
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.main h2 {
+	box-sizing: border-box;
+	color:	rgb(51, 51, 51);
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -22px;
+	text-align: center;
+	visibility: visible;
+}
+
+
+/* Icon vor Login auf Login-Site */
+.main h2.blankImg {
+	display: none;
+}
+	
+/* Einbindung Kopf-Hintergrund, ebenso möglich eine Farbe ohne Grafik zu nehmen ( s. auskommentiertes Beispiel ) */
+.headBG {
+	/*background: url('https://www.smartdelivery.info/portal-v2/img/217530/bg.jpg') top left repeat;*/
+	background-image: none;
+	background-color: #FFFFFF;
+}
+
+/* Header Border Unten */
+.headBottomBorder {
+	border: none;
+}
+
+header.headBG {
+    background-color: rgba(250,250,250,.97);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* Header Registerkarten */
+.navbar-default .navbar-nav > li > a {
+height: 58px;
+line-height: 58px;
+font-size: 20px;
+border-bottom: 1px solid #f0f0f0;
+padding-left: 40px;
+color: #666;
+background: none;
+border: none;
+
+}
+
+.navbar-default .navbar-nav > .active > a { 
+	color: #333;
+	background: none;
+border: none;
+
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus , .navbar-default .navbar-nav > li > a:hover{
+text-decoration: underline;
+background: none;
+border: none;
+}
+
+.thinkGreen > img {
+    display: none;
+}
+	
+/* nicht selektierte Buttons*/
+.btn-primary, .btn-default {
+   background-color:rgb(255, 120, 0);
+   border-color:rgb(255, 120, 0);
+	color: #fff;
+}
+
+/* nicht selektierte Buttons die mit der Maus berührt werden */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .active.btn-primary, .open > .btn-primary.dropdown-toggle,
+.btn-default:hover, .btn-default:focus, .btn-default:active, .active.btn-default, .open > .btn-default.dropdown-toggle {
+   background-color: rgb(255, 184, 122);;
+   border-color:rgb(255, 120, 0);
+color: #fff
+}
+
+
+
+/* Abbrechen Button */
+.darkBtn {
+	color: rgb(0, 30, 120) !important;
+	border: 1px solidrgb(0, 30, 120)!important;
+	background-color: #fff !important;
+}
+
+.darkBtn:hover {
+	background-color: rgb(0, 30, 120) !important;
+	color: #fff !important;
+}
+
+	
+/* Textlinks Farbe */
+.textLink { color: rgb(15, 15, 85); }
+.textLink:hover { color: rgb(15, 15, 85); text-decoration: underline;}
+.textLink:active { color: rgb(15, 15, 85); }
+
+.alert-warning .textLink { color: rgb(15, 15, 85); }
+	
+/* Einstellungen - Kopf-Schaltflächen der Einzelnen Blöcke*/
+.accordion > .head, .accordion > .head:focus, .accordion > .head:active{
+	background-color: #55C3F0;
+	color: #FFFFFF;
+}
+	
+.accordion > .head:hover {
+	background-color: #55C3F0;
+text-decoration: underline;
+text-decoration-color: #0d6e95;
+}	
+	
+/* Empfangskanäle verwalten - Farbe "Delete-Button-Icon" */
+.rowbtn {
+	color: rgb(255, 120, 0);
+	border: none;
+}
+
+.rowbtn:hover {
+	color: rgb(255, 184, 122);
+	border: none;
+}
+	
+/* Formen */
+.has-error .form-control {
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	background-color: rgb(250, 250, 250);
+    border-style: solid;
+    border-width: 0.666667px;
+    border-color: rgb(221, 221, 221);
+	box-shadow: none;
+}
+
+.form-control {
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	background-color: rgb(250, 250, 250);
+    border-style: solid;
+    border-width: 0.666667px;
+    border-color: rgb(221, 221, 221);
+	box-shadow: none;
+}
+
+.form-control:focus {
+	border-color: #0B72B5;
+	font-family: "ALDI SUED W04 Regular", "Open Sans", "Helvetica Neue", "Lucida Grande", "Helvetica", "Arial", "sans-serif";
+	background-color: rgb(250, 250, 250);
+    border-style: solid;
+    border-width: 0.666667px;
+	box-shadow: none;
+}
+
+.expansionIcon {
+	visibility: hidden;
+}
+
+.docRadioSelect, .archivOpenIcon, .archivOpenFirstIcon {
+   background-color: rgb(85, 195, 240);
+}
+.main span.blankImg {
+	display: none;
+}
+
+/* Radio-Button bei Dokumentenauswahl: Ausgewählte Option mit grauem Punkt füllen */
+.docBox > .box > .item.active > .docRadioSelect span:first-of-type {
+    background: url("https://www.smartdelivery.info/portal-v2/img/icon-checkmark.png");
+    background-size: auto; 
+    background-size: contain; 
+    width: 16px; 
+    height: 16px;
+    border-radius: 8px;
+   background-color: rgb(85, 195, 240);
+}
+/* Radio-Button bei Dokumentenauswahl: Inaktive Option nicht mit grauem Punkt füllen */
+.docBox > .box > .item > .docRadioSelect span:first-of-type {   
+    background: url("https://www.smartdelivery.info/portal-v2/img/checkBox_empty.png");
+    width: 16px; 
+    height: 16px;
+    border-radius: 8px;
+   background-color: rgb(85, 195, 240);
+}
+
+.regBtn, .regBtn:active,.regBtn:focus {
+	background-color: #55C3F0;
+	color: #FFFFFF;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 3px;
+margin: auto;
+display: block;
+font-size: 14px;
+line-height: 19px;
+min-height: 40px;
+padding: 10px;
+width: 90%;
+}
+
+.regBtn:hover { 
+background-color: #55C3F0;
+text-decoration: underline;
+text-decoration-color: #0d6e95;
+	border: 1px solid rgba(0,0,0,.1);
+border-radius: 3px;
+margin: auto;
+display: block;
+font-size: 14px;
+line-height: 19px;
+min-height: 40px;
+padding: 10px;
+width: 90%;
+	}
+	
+header h1.noText {
+    padding: 30px 0;
+    display: none;
+}
+
+.termsCheckboxPanel {
+ display: none !important;
+}
+
+.termsinfopanel { 
+  display: inherit !important;
+}
+
+#btnContainer > .btn-danger {
+   color: rgb(51, 51, 51);
+        background-color: rgba(250,250,250,.97);
+
+}
